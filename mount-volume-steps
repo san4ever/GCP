@@ -1,0 +1,6 @@
+lsblk <<< command to list the disks attached to VM
+sudo mkfs -t ext4 /dev/sdb   <<< create an ext4 filesystem on the disk
+
+Now filesystem creation is done. Let's mount the disk
+sudo mkdir /mnt/dsk2
+sudo mount /dev/sdb /mnt/dsk2
